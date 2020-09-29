@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lidl Monsieur Cuisine Shop</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Lidl Monsieur Cuisine Shop</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="modelRow" class="row">
+        
+      </div>
+    </div>
+
+    <div id="modelTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-default panel-pet">
+          <div class="panel-heading">
+            <h3 class="panel-title">Scrappy</h3>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" data-holder-rendered="true">
+            <br/><br/>
+            <strong>Model</strong>: <span class="model-type">Model X</span><br/>
+            <button class="btn btn-default btn-reserve" type="button" data-id="0">Reserve</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+
+window.addEventListener('load', async () => {
+  if (window.ethereum) {
+      window.web3 = new Web3(ethereum);
+      try {
+          await ethereum.enable();
+         web3.eth.sendTransaction({/* ... */});
+      } catch (error) {
+      }
+  }
+  else if (window.web3) {
+      window.web3 = new Web3(web3.currentProvider);
+      web3.eth.sendTransaction({/* ... */});
+  }
+  else {
+      console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+  }
+});
+
+    </script>
+
+  </body>
+
+</html>

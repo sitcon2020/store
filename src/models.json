@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "Monsieur Cuisine",
+    "picture": "images/model.jpg",
+    "breed": "A"
+  },
+  {
+    "id": 1,
+    "name": "Monsieur Cuisine",
+    "picture": "images/model.jpg",
+    "breed": "B"
+  },
+  {
+    "id": 2,
+    "name": "Monsieur Cuisine",
+    "picture": "images/model.jpg",
+    "breed": "C"
+  },
+  {
+    "id": 3,
+    "name": "Monsieur Cuisine",
+    "picture": "images/model.jpg",
+    "breed": "D"
+  }
+]
